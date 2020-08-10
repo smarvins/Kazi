@@ -124,6 +124,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #whitelisting this port because React will be using it
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000/'
-)
+CORS_ORIGIN_WHITELIST = [
+    'https://localhost:3000'
+]
