@@ -128,7 +128,7 @@ class App extends Component {
           <div className="col-md-6 col-sm-10 mx-auto p-0">
             <div className="card p-3">
               <div className="">
-                <button className="btn btn-primary">Add task</button>
+                <button onClick={this.createItem} className="btn btn-primary">Add task</button>
               </div>
               {this.renderTabList()}
               <ul className="list-group list-group-flush">
@@ -137,6 +137,13 @@ class App extends Component {
             </div>
           </div>
         </div>
+        {this.state.modal ? (
+          <Modal
+            activeItem={this.state.activeItem}
+            toggle={this.toggle}
+            onSave={this.handleSubmit}
+          />
+        ) : null}
       </main>
     );
   }
