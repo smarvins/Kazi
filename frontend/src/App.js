@@ -56,6 +56,11 @@ class App extends Component {
   handleDelete = item => {
     alert("delete" + JSON.stringify(item));
   };
+  //create function
+  createItem = () => {
+    const item = {title:'', description:'', completed: false};
+    this.setState({ activeItem: item, modal: !this.state.modal });
+  };
   displayCompleted = status => {
     if (status) {
       return this.setState({ viewCompleted: true });
