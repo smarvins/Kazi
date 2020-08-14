@@ -44,7 +44,7 @@ class App extends Component {
     };
   }
 
-  
+
   //toggle function
   toggle = () => {
     this.setState({ modal: !this.state.modal });
@@ -114,8 +114,8 @@ class App extends Component {
           {item.title}
         </span>
         <span>
-          <button className="btn btn-secondary mr-2"> Edit </button>
-          <button className="btn btn-danger">Delete </button>
+          <button onClick={() => this.editItem(item)} className="btn btn-secondary mr-2"> Edit </button>
+          <button onClick={() => this.handleDelete(item)} className="btn btn-danger">Delete </button>
         </span>
       </li>
     ));
