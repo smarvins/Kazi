@@ -50,6 +50,9 @@ class App extends Component {
     this.toggle();
     alert("save" + JSON.stringify(item));
   };
+  handleDelete = item => {
+    alert("delete" + JSON.stringify(item));
+  };
   displayCompleted = status => {
     if (status) {
       return this.setState({ viewCompleted: true });
