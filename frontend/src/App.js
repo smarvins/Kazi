@@ -33,10 +33,23 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      modal:false,
       viewCompleted: false,
+      activeItem: {
+        title:'',
+        description:'',
+        completed: false
+      },
       todoList: todoItems
     };
   }
+  toggle = () => {
+    this.setState({ modal: !this.state.modal });
+  };
+  handleSubmit = item => {
+    this.toggle();
+    alert("save" + JSON.stringify(item));
+  };
   displayCompleted = status => {
     if (status) {
       return this.setState({ viewCompleted: true });
