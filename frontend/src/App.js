@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Modal from "./components/Modal";
 import './App.scss';
 //dummy code just to see how these items will appear on the site
 const todoItems = [
