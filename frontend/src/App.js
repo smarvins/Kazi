@@ -43,6 +43,8 @@ class App extends Component {
       todoList: todoItems
     };
   }
+
+  
   //toggle function
   toggle = () => {
     this.setState({ modal: !this.state.modal });
@@ -61,6 +63,12 @@ class App extends Component {
     const item = {title:'', description:'', completed: false};
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
+  //edit function
+  editItem = () => {
+    this.setState({ activeItem: item, modal: !this.state.modal });
+  };
+
+
   displayCompleted = status => {
     if (status) {
       return this.setState({ viewCompleted: true });
