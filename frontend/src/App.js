@@ -64,7 +64,7 @@ class App extends Component {
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
   //edit function
-  editItem = () => {
+  editItem = item => {
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
 
