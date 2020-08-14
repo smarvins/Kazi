@@ -43,13 +43,16 @@ class App extends Component {
       todoList: todoItems
     };
   }
+  //toggle function
   toggle = () => {
     this.setState({ modal: !this.state.modal });
   };
+  //submit function
   handleSubmit = item => {
     this.toggle();
     alert("save" + JSON.stringify(item));
   };
+  //delete function
   handleDelete = item => {
     alert("delete" + JSON.stringify(item));
   };
