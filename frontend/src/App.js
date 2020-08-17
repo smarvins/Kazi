@@ -114,7 +114,12 @@ class App extends Component {
   render() {
     return (
       <main className="content">
-        <h1 className="text-white text-uppercase text-center my-4">Todo app</h1>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Kazi</h1>
+            <p class="lead">A simple to do hybrid app built using the power of Django and React</p>
+          </div>
+        </div>
         <div className="row ">
           <div className="col-md-6 col-sm-10 mx-auto p-0">
             <div className="card p-3">
