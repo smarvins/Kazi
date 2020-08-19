@@ -116,8 +116,8 @@ class App extends Component {
       <main className="content">
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 class="display-4">Kazi</h1>
-            <p class="lead">A simple, to-do hybrid app, built using the power of Django and React</p>
+            <h1 class="display-4 reg-color">Kazi</h1>
+            <p class="lead reg-color">A simple, to-do hybrid app, built using the power of Django and React</p>
             <div class="row float-right">button</div>
           </div>
         </div>

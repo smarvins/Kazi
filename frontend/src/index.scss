@@ -10,6 +10,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $bg-color;
 }
+
+.invert-color{
+  color: $box-color;
+}
+.reg-color{
+  color: $text-color;
+}
+
 .todo-title {
   cursor: pointer;
 }
