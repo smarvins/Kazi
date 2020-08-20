@@ -18,7 +18,7 @@ const MainNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-  
+
   return (
     <div>
       <Navbar color="light" light expand="md">
@@ -56,3 +56,5 @@ const MainNav = (props) => {
     </div>
   );
 }
+
+export default MainNav;
