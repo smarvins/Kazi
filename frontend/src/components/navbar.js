@@ -79,7 +79,6 @@ const MainNav = (props) => {
             </UncontrolledDropdown>
 
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>
