@@ -25,7 +25,7 @@ const MainNav = (props) => {
         <NavbarBrand href="/">Kazi</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="nav-margin" navbar>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Tech used
