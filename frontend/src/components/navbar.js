@@ -21,11 +21,13 @@ const MainNav = (props) => {
 
   return (
     <div>
+      {/* Navigation bar */}
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">Kazi</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="nav-margin" navbar>
+            {/* Tech dropdowns */}
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Tech used
@@ -43,6 +45,7 @@ const MainNav = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
 
+            {/* Language dropdowns */}
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Languages
@@ -60,6 +63,7 @@ const MainNav = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
 
+            {/* Developer dropdowns */}
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Developer
@@ -77,7 +81,6 @@ const MainNav = (props) => {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-
           </Nav>
         </Collapse>
       </Navbar>
