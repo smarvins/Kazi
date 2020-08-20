@@ -116,7 +116,10 @@ class App extends Component {
   render() {
     return (
       <main className="content">
+        {/* imported navbar */}
         <MainNav />
+
+        {/* Main jumbotron section */}
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <h1 class="display-4 reg-color">Kazi</h1>
