@@ -115,7 +115,7 @@ class App extends Component {
   };
   render() {
     return (
-      <main className="content">
+      <main className="container-fluid">
         {/* imported navbar */}
         <MainNav />
 

@@ -22,9 +22,9 @@ const MainNav = (props) => {
   return (
     <div>
       {/* Navigation bar */}
-      <Navbar color="light" light expand="md">
+      <Navbar light expand="md">
         <NavbarBrand href="/">Kazi</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler style={{backgroundColor: '#ffde59'}} onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="nav-margin" navbar>
             {/* Tech dropdowns */}

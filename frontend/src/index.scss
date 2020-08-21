@@ -3,6 +3,7 @@
 @import 'variables.scss';
 
 body {
+  width:100%;
   margin: 0;
   padding: 0;
   font-family: $font-stack;
@@ -18,10 +19,25 @@ body {
   color: $text-color;
 }
 
+//navbar
+.navbar-light .navbar-brand{
+  color: $text-color;
 
-.nav-margin{
-  margin-left: auto;  
 }
+.navbar-light .navbar-nav .nav-link {
+  color: $text-color;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: $heavy-text-color;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: $heavy-text-color;
+}
+.navbar-expand-md .navbar-nav {
+    flex-direction: row;
+    margin-left: auto;
+}
+//list-group
 .todo-title {
   cursor: pointer;
 }
