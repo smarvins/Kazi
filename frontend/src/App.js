@@ -122,11 +122,25 @@ class App extends Component {
         {/* Main jumbotron section */}
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 class="display-4 reg-color">Kazi</h1>
-            <p class="lead reg-color">A simple, to-do hybrid app, built using the power of Django and React</p>
-            <div class="row float-right">button</div>
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="lead reg-color">A simple, to-do hybrid app, built using the power of Django and React</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <button type="button" class="collapsible">Open Collapsible</button>
+                    <div class="content">
+                      <p>Lorem ipsum...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+
         <div className="row ">
           <div className="col-md-6 col-sm-10 mx-auto p-0">
             <div className="card p-3">
