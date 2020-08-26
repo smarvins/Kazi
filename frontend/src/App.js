@@ -71,14 +71,14 @@ class App extends Component {
         <span>
           <button
             onClick={() => this.editItem(item)}
-            className="btn btn-secondary mr-2"
+            className="btn btn-secondary mr-2 btn-block"
           >
             {" "}
             Edit{" "}
           </button>
           <button
             onClick={() => this.handleDelete(item)}
-            className="btn btn-danger"
+            className="btn btn-danger btn-block"
           >
             Delete{" "}
           </button>
@@ -123,47 +123,34 @@ class App extends Component {
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <p class="lead reg-color">A simple, to-do hybrid app, built using the power of Django and React</p>
+              <div class="col-sm-4">
+                <h1 class="reg-color ">A simple, to-do hybrid app, built using the power of Django and React</h1>
               </div>
-              <div class="col-sm-6">
-                <div class="jumbotron jumbotron-fluid">
-                  <div class="container">
-                    <input id="toggle" type="checkbox" checked></input>
-                    <label for="toggle">Hidden Kitten</label>
-                    <div id="expand">
-                      <section>
-                        <p>mew</p>
-                      </section>
+              <div class="col-sm-8">
+                  <div class="card ">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <button onClick={this.createItem} className="btn btn-primary btn-lg btn-block">
+                          Add task
+                        </button>
+                      </h5>
+                      {this.renderTabList()}
+                      <ul className="list-group list-group-flush">
+                        {this.renderItems()}
+                      </ul>
+                      {this.state.modal ? (
+                        <Modal
+                          activeItem={this.state.activeItem}
+                          toggle={this.toggle}
+                          onSave={this.handleSubmit}
+                        />
+                      ) : null}
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-
-
-        <div className="row ">
-          <div className="col-md-6 col-sm-10 mx-auto p-0">
-            <div className="card p-3">
-                <button onClick={this.createItem} className="btn btn-primary">
-                  Add task
-                </button>
-              {this.renderTabList()}
-              <ul className="list-group list-group-flush">
-                {this.renderItems()}
-              </ul>
-            </div>
-          </div>
-        </div>
-        {this.state.modal ? (
-          <Modal
-            activeItem={this.state.activeItem}
-            toggle={this.toggle}
-            onSave={this.handleSubmit}
-          />
-        ) : null}
       </main>
     );
   }
