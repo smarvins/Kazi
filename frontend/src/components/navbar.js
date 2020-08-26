@@ -23,7 +23,7 @@ const MainNav = (props) => {
     <div>
       {/* Navigation bar */}
       <Navbar light expand="md">
-        <NavbarBrand href="/">Kazi</NavbarBrand>
+        <NavbarBrand class="h1">Kazi</NavbarBrand>
         <NavbarToggler style={{backgroundColor: '#ffde59'}} onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="nav-margin" navbar>
