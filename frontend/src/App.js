@@ -129,9 +129,12 @@ class App extends Component {
               <div class="col-sm-6">
                 <div class="jumbotron jumbotron-fluid">
                   <div class="container">
-                    <button type="button" class="collapsible">Open Collapsible</button>
-                    <div class="content">
-                      <p>Lorem ipsum...</p>
+                    <input id="toggle" type="checkbox" checked></input>
+                    <label for="toggle">Hidden Kitten</label>
+                    <div id="expand">
+                      <section>
+                        <p>mew</p>
+                      </section>
                     </div>
                   </div>
                 </div>
@@ -144,11 +147,9 @@ class App extends Component {
         <div className="row ">
           <div className="col-md-6 col-sm-10 mx-auto p-0">
             <div className="card p-3">
-              <div className="">
                 <button onClick={this.createItem} className="btn btn-primary">
                   Add task
                 </button>
-              </div>
               {this.renderTabList()}
               <ul className="list-group list-group-flush">
                 {this.renderItems()}
