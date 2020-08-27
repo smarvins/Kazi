@@ -27,7 +27,7 @@ body {
 //navbar
 .navbar-light .navbar-brand{
   color: $text-color;
-  font-size: 3.25rem;
+  font-size: 2.5rem;
 }
 .navbar-light .navbar-nav .nav-link {
   color: $text-color;
@@ -42,7 +42,10 @@ body {
     flex-direction: row;
     margin-left: auto;
 }
-
+//card
+.card{
+  background-color: $box-color;
+}
 //list-group
 .todo-title {
   cursor: pointer;
