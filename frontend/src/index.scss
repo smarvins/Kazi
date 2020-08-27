@@ -45,6 +45,7 @@ body {
 //card
 .card{
   background-color: $box-color;
+  border-radius: 0%;
 }
 //list-group
 .todo-title {
@@ -56,11 +57,20 @@ body {
 .tab-list > span {
   padding: 5px 8px;
   border: 1px solid #282c34;
-  border-radius: 10px;
+  border-radius: 0%;
   margin-right: 5px;
   cursor: pointer;
 }
 .tab-list > span.active {
-  background-color: #282c34;
-  color: #ffffff;
+  background-color: $bg-color;
+  color: $box-color;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: $box-color;
+}
+.border-top {
+    border-top: 1px solid $bg-color!important;
 }

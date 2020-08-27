@@ -136,7 +136,7 @@ class App extends Component {
                         </button>
                       </h5>
                       {this.renderTabList()}
-                      <ul className="list-group list-group-flush">
+                      <ul className="list-group list-group-flush border-top">
                         {this.renderItems()}
                       </ul>
                       {this.state.modal ? (

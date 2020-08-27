@@ -9,3 +9,31 @@ $heavy-text-color: #d1c395;
 
 // Bootstrap Variables
 .jumbotron { background-color: $bg-color; }
+.btn-primary {
+  background-color: $box-color;
+  border-color: $bg-color;
+  border-radius: 0%;
+  color: $bg-color;
+}
+.btn-primary:hover{
+  background-color: $bg-color;
+  color: $box-color;
+  border-color: $bg-color;
+}
+.btn-secondary{
+  background-color: $box-color;
+  border-color: $bg-color;
+  border-radius: 0%;
+  color: $bg-color;
+}
+.btn-secondary:hover{
+  background-color: $bg-color;
+  color: $box-color;
+  border-color: $bg-color;
+}
+.btn-danger{
+  background-color: $bg-color;
+  border-color: $bg-color;
+  border-radius: 0%;
+  color: $box-color;
+}
