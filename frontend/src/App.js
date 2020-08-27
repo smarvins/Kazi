@@ -123,8 +123,9 @@ class App extends Component {
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <div class="row">
+              {/* Content on the left */}
               <div class="col-sm-4">
-                <h1 class="reg-color ">A simple, to-do hybrid app, built using the power of Django and React</h1>
+                <h2 class="reg-color text-heavy">A simple, to-do hybrid app, built using the power of Django and React.</h2>
               </div>
               <div class="col-sm-8">
                   <div class="card ">
