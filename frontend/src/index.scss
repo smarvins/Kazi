@@ -46,6 +46,9 @@ body {
   color: $heavy-text-color;
   border-bottom: $heavy-text-color;
 }
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: $text-color;
+}
 .navbar-expand-md .navbar-nav {
   margin-left: auto;
 }
