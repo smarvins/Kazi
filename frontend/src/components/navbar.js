@@ -34,13 +34,22 @@ const MainNav = (props) => {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  ReactJS
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
+                  Django (DRF)
                 </DropdownItem>
                 <DropdownItem>
-                  Reset
+                  SASS
+                </DropdownItem>
+                <DropdownItem>
+                  Bootstrap
+                </DropdownItem>
+                <DropdownItem>
+                  JSX
+                </DropdownItem>
+                <DropdownItem>
+                  Git
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -52,13 +61,10 @@ const MainNav = (props) => {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  JavaScript
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem>
-                  Reset
+                  Python
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -69,15 +75,8 @@ const MainNav = (props) => {
                 Developer
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
+                <DropdownItem href="http://www.stevemarvins.dev@gmail.com/">
+                  Chat with me:)
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>

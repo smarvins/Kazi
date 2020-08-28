@@ -58,7 +58,7 @@ class App extends Component {
     return newItems.map(item => (
       <li
         key={item.id}
-        className="list-group-item d-flex justify-content-between align-items-center"
+        className="list-group-item d-flex justify-content-between align-items-center border-top"
       >
         <span
           className={`todo-title mr-2 ${
@@ -136,7 +136,7 @@ class App extends Component {
                         </button>
                       </h5>
                       {this.renderTabList()}
-                      <ul className="list-group list-group-flush border-top">
+                      <ul className="list-group list-group-flush">
                         {this.renderItems()}
                       </ul>
                       {this.state.modal ? (
