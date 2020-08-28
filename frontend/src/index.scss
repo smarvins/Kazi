@@ -23,7 +23,12 @@ body {
   margin-top: 10%;
   font-size: 280%;
 }
-
+.jumbotron-fluid {
+  margin-top: 5%;
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
 //navbar
 .navbar-light .navbar-brand{
   color: $text-color;
