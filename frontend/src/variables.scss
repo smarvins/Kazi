@@ -9,6 +9,8 @@ $heavy-text-color: #d1c395;
 
 // Bootstrap Variables
 .jumbotron { background-color: $bg-color; }
+
+//Primary button//
 .btn-primary {
   background-color: $box-color;
   border-color: $bg-color;
@@ -20,6 +22,18 @@ $heavy-text-color: #d1c395;
   color: $box-color;
   border-color: $bg-color;
 }
+.btn-primary.focus, .btn-primary:focus {
+  background-color: $bg-color;
+  color: $box-color;
+  border-color: $bg-color;
+  box-shadow: 0 0 0 0.2rem $box-color;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color: $bg-color;
+  color: $box-color;
+  border-color: $bg-color;
+}
+//Secondary button//
 .btn-secondary{
   background-color: $box-color;
   border-color: $bg-color;
@@ -31,7 +45,15 @@ $heavy-text-color: #d1c395;
   color: $box-color;
   border-color: $bg-color;
 }
+//Danger button//
 .btn-danger{
+  background-color: $bg-color;
+  border-color: $bg-color;
+  border-radius: 0%;
+  color: $box-color;
+}
+//Success button
+.btn-success{
   background-color: $bg-color;
   border-color: $bg-color;
   border-radius: 0%;
