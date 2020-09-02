@@ -126,7 +126,7 @@ STATIC_URL = '/static/'
 
 #whitelisting this port because React will be using it
 CORS_ORIGIN_WHITELIST = [
-    'https://localhost:3000'
+    'https://kazi-list.netlify.app/'
 ]
 
 # Activate Django-Heroku.
