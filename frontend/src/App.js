@@ -125,7 +125,7 @@ class App extends Component {
             <div class="row">
               {/* Content on the left */}
               <div class="col-sm-4">
-                <h2 class="reg-color text-heavy">A simple and responsive to-do hybrid app, built using the power of Django and React.</h2>
+                <h2 class="reg-color text-heavy">A simple and responsive to-do hybrid app. Built using the power of Django and React.</h2>
               </div>
               <div class="col-sm-8">
                   <div class="card ">
