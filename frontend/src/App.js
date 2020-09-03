@@ -3,6 +3,7 @@ import Modal from "./components/Modal";
 import axios from "axios";
 import MainNav from "./components/Navbar";
 
+axios.defaults.baseURL = 'https://powerful-coast-97236.herokuapp.com';
 
 class App extends Component {
   constructor(props) {
