@@ -1,5 +1,5 @@
 # Kazi
-[Trailer pic](Kazi site.png)
+![Trailer pic](/Kazi site.png)
 This is a simple To-do hybrid app built using Django and ReactJS. Here's the [live link!](https://kazi-list.netlify.app/)
 
 ### Served on...
