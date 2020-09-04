@@ -1,5 +1,5 @@
 # Kazi
-![Trailer pic](https://imgur.com/a/JIj2mkV)
+![Trailer pic](Kazi site.png)
 This is a simple To-do hybrid app built using Django and ReactJS.
 
 ### Served on...
