@@ -29,9 +29,11 @@ export default class CustomModal extends Component {
   render() {
     const { toggle, onSave } = this.props;
     return (
+      {/* Modal */}
       <Modal isOpen={true} toggle={toggle}>
         <ModalHeader toggle={toggle}> Todo Item </ModalHeader>
         <ModalBody>
+          {/* Form inside modal */}
           <Form>
             <FormGroup>
               <Label for="title">Title</Label>
@@ -53,6 +55,7 @@ export default class CustomModal extends Component {
                 placeholder="Enter Todo description"
               />
             </FormGroup>
+            {/* Checkbox for the task */}
             <FormGroup check>
               <Label for="completed">
                 <Input
@@ -66,6 +69,7 @@ export default class CustomModal extends Component {
             </FormGroup>
           </Form>
         </ModalBody>
+        {/* Save button */}
         <ModalFooter>
           <Button color="success" onClick={() => onSave(this.state.activeItem)}>
             Save

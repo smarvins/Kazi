@@ -3,6 +3,7 @@ import Modal from "./components/Modal";
 import axios from "axios";
 import MainNav from "./components/Navbar";
 
+// Defined proxy to axios config to accept client requests
 axios.defaults.baseURL = 'https://powerful-coast-97236.herokuapp.com';
 
 class App extends Component {
@@ -27,12 +28,14 @@ class App extends Component {
       .then(res => this.setState({ todoList: res.data }))
       .catch(err => console.log(err));
   };
+  //Task status check
   displayCompleted = status => {
     if (status) {
       return this.setState({ viewCompleted: true });
     }
     return this.setState({ viewCompleted: false });
   };
+  //This will display complete and incomplete tasks
   renderTabList = () => {
     return (
       <div className="my-5 tab-list">
@@ -51,6 +54,7 @@ class App extends Component {
       </div>
     );
   };
+  //Rendered tasks
   renderItems = () => {
     const { viewCompleted } = this.state;
     const newItems = this.state.todoList.filter(
@@ -90,6 +94,7 @@ class App extends Component {
   toggle = () => {
     this.setState({ modal: !this.state.modal });
   };
+  //This handles the submit function
   handleSubmit = item => {
     this.toggle();
     if (item.id) {
@@ -102,15 +107,18 @@ class App extends Component {
       .post("/api/todos/", item)
       .then(res => this.refreshList());
   };
+  //Delete a task
   handleDelete = item => {
     axios
       .delete(`/api/todos/${item.id}`)
       .then(res => this.refreshList());
   };
+  //Create a task
   createItem = () => {
     const item = { title: "", description: "", completed: false };
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
+  //Edit a task
   editItem = item => {
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
@@ -140,6 +148,7 @@ class App extends Component {
                       <ul className="list-group list-group-flush">
                         {this.renderItems()}
                       </ul>
+                      {/* Modal */}
                       {this.state.modal ? (
                         <Modal
                           activeItem={this.state.activeItem}
