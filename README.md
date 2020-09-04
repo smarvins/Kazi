@@ -18,5 +18,5 @@ ReactJS | Django
 JSX | Corsheaders
 SASS | Rest_framework
 
-##Languages
+## Languages
 Python and JavaScript
