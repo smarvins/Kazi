@@ -1,4 +1,5 @@
 # Kazi
+### [Visit the site!](https://kazi-list.netlify.app/)
 ![Trailer pic](/kazi_site.png)
 This is a simple To-do hybrid app built using Django and ReactJS. Here's the [live link!](https://kazi-list.netlify.app/)
 
